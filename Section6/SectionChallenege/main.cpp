@@ -27,10 +27,7 @@ int main() {
 
     cout << "Subtotal for small rooms: $" << small_room_subtotal << endl;
     cout << "Subtotal for large rooms: $" << large_room_subtotal << endl;
-    cout << "Subtotal: $" << subtotal <<
-
-
-    endl;
+    cout << "Subtotal: $" << subtotal <<endl;
     cout << "Sales tax: $" << tax << endl;
     cout << "=====================================" << endl;
     cout << "Total: $" << total << endl;
