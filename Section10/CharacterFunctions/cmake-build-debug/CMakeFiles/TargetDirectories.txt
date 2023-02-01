@@ -1,3 +1,0 @@
-/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section10/CharacterFunctions/cmake-build-debug/CMakeFiles/CharacterFunctions.dir
-/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section10/CharacterFunctions/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section10/CharacterFunctions/cmake-build-debug/CMakeFiles/rebuild_cache.dir
