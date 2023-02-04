@@ -28,7 +28,5 @@ int main() {
         }
     }
 
-    w
-
     return 0;
 }
