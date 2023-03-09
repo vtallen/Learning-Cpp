@@ -1,0 +1,6 @@
+# ninja log v5
+0	293	1675277072000000000	CMakeFiles/Section2Quiz.dir/main.cpp.o	971b1ec4c4e2e8c1
+294	328	1675277072000000000	Section2Quiz	aa59d9dc1d2eddd9
+2	209	1675277193000000000	CMakeFiles/Section2Quiz.dir/main.cpp.o	971b1ec4c4e2e8c1
+2	219	1675277193000000000	CMakeFiles/Section2Quiz.dir/io.cpp.o	58224355900e9890
+220	249	1675277193000000000	Section2Quiz	f33f8b680bb47568

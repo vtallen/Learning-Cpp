@@ -1,0 +1,15 @@
+# ninja log v5
+0	260	1678274286516669610	CMakeFiles/SelectionSort.dir/main.cpp.o	b963c277bfb6483e
+261	294	1678274286552767640	SelectionSort	df1810cfaef82f14
+2	214	1678274365961221196	CMakeFiles/SelectionSort.dir/main.cpp.o	b963c277bfb6483e
+214	247	1678274365995186935	SelectionSort	df1810cfaef82f14
+2	230	1678274567009417553	CMakeFiles/SelectionSort.dir/main.cpp.o	b963c277bfb6483e
+231	264	1678274567044331167	SelectionSort	df1810cfaef82f14
+2	223	1678274596116573832	CMakeFiles/SelectionSort.dir/main.cpp.o	b963c277bfb6483e
+223	251	1678274596146519115	SelectionSort	df1810cfaef82f14
+2	216	1678274716100199269	CMakeFiles/SelectionSort.dir/main.cpp.o	b963c277bfb6483e
+216	246	1678274716131214426	SelectionSort	df1810cfaef82f14
+2	217	1678274727936830986	CMakeFiles/SelectionSort.dir/main.cpp.o	b963c277bfb6483e
+217	246	1678274727966856518	SelectionSort	df1810cfaef82f14
+1	218	1678274752384010713	CMakeFiles/SelectionSort.dir/main.cpp.o	b963c277bfb6483e
+218	247	1678274752414810203	SelectionSort	df1810cfaef82f14

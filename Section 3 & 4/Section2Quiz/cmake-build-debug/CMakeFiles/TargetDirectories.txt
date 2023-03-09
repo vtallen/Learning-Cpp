@@ -1,0 +1,3 @@
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/LearnCpp_com/Section2Quiz/cmake-build-debug/CMakeFiles/Section2Quiz.dir
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/LearnCpp_com/Section2Quiz/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/LearnCpp_com/Section2Quiz/cmake-build-debug/CMakeFiles/rebuild_cache.dir

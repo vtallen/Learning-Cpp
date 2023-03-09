@@ -1,0 +1,6 @@
+# ninja log v5
+0	22	1675211509000000000	CMakeFiles/MultipleFiles.dir/add.cpp.o	6ae12945e48636ca
+0	263	1675211509000000000	CMakeFiles/MultipleFiles.dir/main.cpp.o	2292f3579964c3e
+263	299	1675211509000000000	MultipleFiles	1108ae15de768bcf
+2	266	1675211701000000000	CMakeFiles/MultipleFiles.dir/main.cpp.o	2292f3579964c3e
+266	301	1675211701000000000	MultipleFiles	1108ae15de768bcf

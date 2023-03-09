@@ -1,0 +1,3 @@
+/Users/vincentallen/Programming/Cpp/Learning-Cpp/LearnCpp_com/StringsQuiz/cmake-build-debug/CMakeFiles/StringsQuiz.dir
+/Users/vincentallen/Programming/Cpp/Learning-Cpp/LearnCpp_com/StringsQuiz/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vincentallen/Programming/Cpp/Learning-Cpp/LearnCpp_com/StringsQuiz/cmake-build-debug/CMakeFiles/rebuild_cache.dir

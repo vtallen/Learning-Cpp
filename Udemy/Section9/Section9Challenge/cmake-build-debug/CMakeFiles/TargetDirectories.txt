@@ -1,0 +1,3 @@
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section9/Section9Challenge/cmake-build-debug/CMakeFiles/Section9Challenge.dir
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section9/Section9Challenge/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section9/Section9Challenge/cmake-build-debug/CMakeFiles/rebuild_cache.dir

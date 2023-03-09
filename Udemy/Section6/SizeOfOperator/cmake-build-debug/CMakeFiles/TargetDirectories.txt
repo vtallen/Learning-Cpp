@@ -1,0 +1,3 @@
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section6/SizeOfOperator/cmake-build-debug/CMakeFiles/SizeOfOperator.dir
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section6/SizeOfOperator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/External/Nextcloud/Programming/Cpp/Learning-Cpp/Section6/SizeOfOperator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
