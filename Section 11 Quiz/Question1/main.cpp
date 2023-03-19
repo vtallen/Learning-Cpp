@@ -9,14 +9,29 @@
 #include <iostream>
 #include <array>
 
-enum class Items {
-    HEALTH_POTION,
-    TORCH,
-    ARROW,
-};
+namespace Items {
+    enum Items {
+        HEALTH_POTION,
+        TORCH,
+        ARROW,
+    };
+}
+
+template<std::size_t Size>
+int countTotalItems(const std::array<int, Size> &array) {
+    int total_items {0};
+    for (int num_items : array) {
+        total_items += num_items;
+    }
+
+    return total_items;
+}
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::array<int, 3> player_items {2, 5, 10};
+
+    std::cout << "The player has " << countTotalItems(player_items) << " items." << '\n';
+    std::cout << "The player has " << player_items[Items::TORCH] << " torches." << '\n';
 
     return 0;
 }
