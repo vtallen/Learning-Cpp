@@ -13,6 +13,10 @@ public:
 
     std::string operator()(int start, int num_chars);
     friend std::ostream& operator<<(std::ostream& out, MyString myString);
+
+    std::string_view substr(int start, int num_chars) {
+        return std::string_view{m_string}.substr(start, num_chars);
+    }
 };
 
 std::string MyString::operator()(int start, int num_chars) {
@@ -27,7 +31,7 @@ std::ostream& operator<<(std::ostream &out, MyString myString) { //NOLINT
 int main()
 {
     MyString s { "Hello, world!" };
-    std::cout << s(7, 5) << '\n'; // start at index 7 and return 5 characters
+    std::cout << s.substr(7, 5) << '\n'; // start at index 7 and return 5 characters
 
     return 0;
 }
