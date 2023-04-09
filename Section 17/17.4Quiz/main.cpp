@@ -11,15 +11,17 @@ Banana class that also inherits Fruit. Banana has no additional members.
 
 class Fruit {
 private:
-  const std::string m_name{};
-  const std::string m_color{};
+  std::string m_name{};
+  std::string m_color{};
 
 public:
-  Fruit(const std::string_view name, const std::string_view color)
+  Fruit(const std::string &name, const std::string &color)
       : m_name{name}, m_color{color} {}
 
-  std::string getName() { return m_name; };
-  std::string getColor() { return m_color; };
+  // std::string getName() { return m_name; };
+  const std::string &getName() const { return m_name; };
+
+  const std::string &getColor() const { return m_color; };
 
   friend std::ostream &operator<<(std::ostream &out, Fruit fruit) {
     std::cout << "Fruit(" << fruit.getName() << "," << fruit.getColor() << ")";
@@ -32,8 +34,7 @@ private:
   const double m_fiber{};
 
 public:
-  Apple(const std::string_view name, const std::string_view color,
-        const double fiber)
+  Apple(const std::string &name, const std::string &color, const double fiber)
       : Fruit{name, color}, m_fiber{fiber} {}
 
   double getFiber() { return m_fiber; };
@@ -48,7 +49,7 @@ public:
 
 class Banana : Fruit {
 public:
-  Banana(const std::string_view name, const std::string_view color)
+  Banana(const std::string &name, const std::string &color)
       : Fruit{name, color} {}
 
   friend std::ostream &operator<<(std::ostream &out, Banana banana) {
@@ -65,6 +66,16 @@ int main() {
 
   const Banana b{"Cavendish", "yellow"};
   std::cout << b << '\n';
+
+  Banana b2{"TEST", "TEST"};
+  {
+    std::string test{"Macintosh"};
+    b2 = Banana{test, ""};
+  }
+
+  std::cout << b2;
+
+  // std::cout << b.getName();
 
   return 0;
 }
