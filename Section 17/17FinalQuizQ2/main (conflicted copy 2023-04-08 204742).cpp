@@ -24,8 +24,6 @@ public:
 class Apple : public Fruit {
 public:
   Apple(const std::string &color) : Fruit{"Apple", color} {}
-  Apple(const std::string &name, const std::string &color)
-      : Fruit{name, color} {}
 };
 
 class Banana : public Fruit {
@@ -34,18 +32,12 @@ public:
   Banana(const std::string &name) : Fruit{name, "yellow"} {}
 };
 
-class GrannySmith : public Apple {
-public:
-  GrannySmith() : Apple{"Granny Smith", "green"} {}
-};
 int main() {
   Apple a{"red"};
-  Banana b;
-  GrannySmith c;
+  Banana b{};
 
   std::cout << "My " << a.getName() << " is " << a.getColor() << ".\n";
   std::cout << "My " << b.getName() << " is " << b.getColor() << ".\n";
-  std::cout << "My " << c.getName() << " is " << c.getColor() << ".\n";
 
   return 0;
 }
