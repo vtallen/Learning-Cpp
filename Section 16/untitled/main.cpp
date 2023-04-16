@@ -1,23 +1,64 @@
-#include <vector>
 #include <iostream>
+#include <string_view>
+#include <string>
+#include <array>
 
-using namespace std;
+class Animal {
+protected:
+    std::string m_name;
+    std::string m_speak;
 
-vector<int> compareTriplets(vector<int> a, vector<int> b) {
-    int aScore {};
-    int bScore {};
-    for (int i {0}; i < 3; ++i) {
-        if (a[i] > b[i]) {
-            ++aScore;
-        } else {
-            ++bScore;
-        }
+    // We're making this constructor protected because
+    // we don't want people creating Animal objects directly,
+    // but we still want derived classes to be able to use it.
+    Animal(std::string_view name, std::string_view speak)
+            : m_name{name}, m_speak{speak} {
     }
-    
-    return vector<int>{aScore, bScore};
-}
+
+    // To prevent slicing (covered later)
+    Animal(const Animal &) = default;
+
+    Animal &operator=(const Animal &) = default;
+
+public:
+    std::string_view getName() const { return m_name; }
+
+    std::string_view speak() const { return m_speak; }
+};
+
+class Cat : public Animal {
+public:
+    Cat(std::string_view name)
+            : Animal{name, "meow"} {
+    }
+
+    std::string_view speak() const { return "Meow"; }
+};
+
+class Dog : public Animal {
+public:
+    Dog(std::string_view name)
+            : Animal{name, "woof"} {
+    }
+
+    std::string_view speak() const { return "Woof"; }
+};
 
 int main() {
-    std::vector<int> a = compareTriplets({5, 6, 7}, {3, 6, 10});
-    std::cout << a[0] << a[1];
+    const Cat fred{"Fred"};
+    const Cat misty{"Misty"};
+    const Cat zeke{"Zeke"};
+
+    const Dog garbo{"Garbo"};
+    const Dog pooky{"Pooky"};
+    const Dog truffle{"Truffle"};
+
+    // Set up an array of pointers to animals, and set those pointers to our Cat and Dog objects
+    const auto animals{std::to_array<const Animal*>({&fred, &garbo, &misty, &pooky, &truffle, &zeke})};
+
+    for (const auto animal: animals) {
+        std::cout << animal->getName() << " says " << animal->speak() << '\n';
+    }
+
+    return 0;
 }
